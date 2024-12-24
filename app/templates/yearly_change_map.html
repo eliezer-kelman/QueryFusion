@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0e918999f59d34355913d340610796f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a0e918999f59d34355913d340610796f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0e918999f59d34355913d340610796f = L.map(
+                "map_a0e918999f59d34355913d340610796f",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_347ee6331e13bdb395e3cb4953bd54f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_347ee6331e13bdb395e3cb4953bd54f5.addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var marker_e7a762414e436de79f35088c7e41c418 = L.marker(
+                [35.0, 105.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_7a8a543bb04f6873f111bbe294441a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7a762414e436de79f35088c7e41c418.setIcon(icon_7a8a543bb04f6873f111bbe294441a0c);
+        
+    
+        var popup_90c28b0c22332b9b7e87f7c241fedcd3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc1de9483ebe45099b9d1989246a28f5 = $(`<div id="html_bc1de9483ebe45099b9d1989246a28f5" style="width: 100.0%; height: 100.0%;"><b>East Asia</b><br>Yearly Change:<br>1970: 0.00%<br></div>`)[0];
+                popup_90c28b0c22332b9b7e87f7c241fedcd3.setContent(html_bc1de9483ebe45099b9d1989246a28f5);
+            
+        
+
+        marker_e7a762414e436de79f35088c7e41c418.bindPopup(popup_90c28b0c22332b9b7e87f7c241fedcd3)
+        ;
+
+        
+    
+    
+            var marker_1d3100410563181b2bc6d8c619f00b01 = L.marker(
+                [30.0, 40.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_59711c40cc7f42d0ceabaa27ad62ee0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d3100410563181b2bc6d8c619f00b01.setIcon(icon_59711c40cc7f42d0ceabaa27ad62ee0f);
+        
+    
+        var popup_fae6bbc13c1dbf2960d2d6326edae29e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_861c3534d3075ba2a73b184059df17e8 = $(`<div id="html_861c3534d3075ba2a73b184059df17e8" style="width: 100.0%; height: 100.0%;"><b>Middle East & North Africa</b><br>Yearly Change:<br>1970: 400.00%<br>1971: 40.00%<br></div>`)[0];
+                popup_fae6bbc13c1dbf2960d2d6326edae29e.setContent(html_861c3534d3075ba2a73b184059df17e8);
+            
+        
+
+        marker_1d3100410563181b2bc6d8c619f00b01.bindPopup(popup_fae6bbc13c1dbf2960d2d6326edae29e)
+        ;
+
+        
+    
+    
+            var marker_c022660f482d9b47db812a9da78f4f3f = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_69e85dac2d9bbcba443b85fd1b3183c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c022660f482d9b47db812a9da78f4f3f.setIcon(icon_69e85dac2d9bbcba443b85fd1b3183c2);
+        
+    
+        var popup_08f198141b591329e1c3fac2d6a4d419 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad19bc1531b4ef202b41e13ae9722e41 = $(`<div id="html_ad19bc1531b4ef202b41e13ae9722e41" style="width: 100.0%; height: 100.0%;"><b>Australasia & Oceania</b><br>Yearly Change:<br></div>`)[0];
+                popup_08f198141b591329e1c3fac2d6a4d419.setContent(html_ad19bc1531b4ef202b41e13ae9722e41);
+            
+        
+
+        marker_c022660f482d9b47db812a9da78f4f3f.bindPopup(popup_08f198141b591329e1c3fac2d6a4d419)
+        ;
+
+        
+    
+    
+            var marker_15e477b486dfdebeffc110ec44624ca4 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_a25e96bae4b8dce56002b5c3b01cef4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_15e477b486dfdebeffc110ec44624ca4.setIcon(icon_a25e96bae4b8dce56002b5c3b01cef4d);
+        
+    
+        var popup_6a03f0785fae33e63bb28e0c9d24a19b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bc4b77b129d15a4e82ade493a821c00 = $(`<div id="html_3bc4b77b129d15a4e82ade493a821c00" style="width: 100.0%; height: 100.0%;"><b>Western Europe</b><br>Yearly Change:<br>1970: 1566.67%<br>1971: 16.00%<br></div>`)[0];
+                popup_6a03f0785fae33e63bb28e0c9d24a19b.setContent(html_3bc4b77b129d15a4e82ade493a821c00);
+            
+        
+
+        marker_15e477b486dfdebeffc110ec44624ca4.bindPopup(popup_6a03f0785fae33e63bb28e0c9d24a19b)
+        ;
+
+        
+    
+    
+            var marker_6b611fbfd2bc54ee74788bff64ea1709 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_03c831c5a5370ac2c714bb848379f482 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6b611fbfd2bc54ee74788bff64ea1709.setIcon(icon_03c831c5a5370ac2c714bb848379f482);
+        
+    
+        var popup_88745eb3db5b105a7fd244d9574efc29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_671c228f6f55e653475ee507e76739b4 = $(`<div id="html_671c228f6f55e653475ee507e76739b4" style="width: 100.0%; height: 100.0%;"><b>Central America & Caribbean</b><br>Yearly Change:<br>1971: -28.57%<br></div>`)[0];
+                popup_88745eb3db5b105a7fd244d9574efc29.setContent(html_671c228f6f55e653475ee507e76739b4);
+            
+        
+
+        marker_6b611fbfd2bc54ee74788bff64ea1709.bindPopup(popup_88745eb3db5b105a7fd244d9574efc29)
+        ;
+
+        
+    
+    
+            var marker_ba0a1612a3bc7aa58670fac5bf21aa08 = L.marker(
+                [28.0, 77.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_7eb4e724379fca0547c956484d1b63e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ba0a1612a3bc7aa58670fac5bf21aa08.setIcon(icon_7eb4e724379fca0547c956484d1b63e4);
+        
+    
+        var popup_0701e4a2e59ad24ba98c04bcf4b2053d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4512c31af9efebc67d1ad2506fd13db = $(`<div id="html_a4512c31af9efebc67d1ad2506fd13db" style="width: 100.0%; height: 100.0%;"><b>South Asia</b><br>Yearly Change:<br></div>`)[0];
+                popup_0701e4a2e59ad24ba98c04bcf4b2053d.setContent(html_a4512c31af9efebc67d1ad2506fd13db);
+            
+        
+
+        marker_ba0a1612a3bc7aa58670fac5bf21aa08.bindPopup(popup_0701e4a2e59ad24ba98c04bcf4b2053d)
+        ;
+
+        
+    
+    
+            var marker_a2aff3a0e181b75517ffe02241be6681 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_be163fda0e02697260cef339507a5d9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a2aff3a0e181b75517ffe02241be6681.setIcon(icon_be163fda0e02697260cef339507a5d9a);
+        
+    
+        var popup_88fe376d1f4c751fcbbf7de4c136bb6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b43eaf87c54040fe29c88dbefc50b9fc = $(`<div id="html_b43eaf87c54040fe29c88dbefc50b9fc" style="width: 100.0%; height: 100.0%;"><b>Eastern Europe</b><br>Yearly Change:<br>1971: -66.67%<br></div>`)[0];
+                popup_88fe376d1f4c751fcbbf7de4c136bb6b.setContent(html_b43eaf87c54040fe29c88dbefc50b9fc);
+            
+        
+
+        marker_a2aff3a0e181b75517ffe02241be6681.bindPopup(popup_88fe376d1f4c751fcbbf7de4c136bb6b)
+        ;
+
+        
+    
+    
+            var marker_68c86cf790c3d48a0b06a137f29a1841 = L.marker(
+                [37.0, -95.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_4d55352094dbb71a8f2fb76765aad85c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_68c86cf790c3d48a0b06a137f29a1841.setIcon(icon_4d55352094dbb71a8f2fb76765aad85c);
+        
+    
+        var popup_197f7f2417e0216c204a1b7e1b4bc528 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05c802a4e883fa477857be8fc7ec8da7 = $(`<div id="html_05c802a4e883fa477857be8fc7ec8da7" style="width: 100.0%; height: 100.0%;"><b>North America</b><br>Yearly Change:<br>1970: 7816.67%<br>1971: -54.95%<br></div>`)[0];
+                popup_197f7f2417e0216c204a1b7e1b4bc528.setContent(html_05c802a4e883fa477857be8fc7ec8da7);
+            
+        
+
+        marker_68c86cf790c3d48a0b06a137f29a1841.bindPopup(popup_197f7f2417e0216c204a1b7e1b4bc528)
+        ;
+
+        
+    
+    
+            var marker_81cf0f02cebda3ddd245f7b0c1d4bb67 = L.marker(
+                [-15.0, -60.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_a7f21cb4a4a3029b387afa713db86b37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81cf0f02cebda3ddd245f7b0c1d4bb67.setIcon(icon_a7f21cb4a4a3029b387afa713db86b37);
+        
+    
+        var popup_e873520aa70c720b1924ec7fb139e4a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41917a5be9d0bc1c91577bd065821004 = $(`<div id="html_41917a5be9d0bc1c91577bd065821004" style="width: 100.0%; height: 100.0%;"><b>South America</b><br>Yearly Change:<br>1970: 7000.00%<br>1971: -70.42%<br></div>`)[0];
+                popup_e873520aa70c720b1924ec7fb139e4a9.setContent(html_41917a5be9d0bc1c91577bd065821004);
+            
+        
+
+        marker_81cf0f02cebda3ddd245f7b0c1d4bb67.bindPopup(popup_e873520aa70c720b1924ec7fb139e4a9)
+        ;
+
+        
+    
+    
+            var marker_f95233fa6b3c6207bb701bc9a7565637 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_f404cb614b87e2796e883805fb472e69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f95233fa6b3c6207bb701bc9a7565637.setIcon(icon_f404cb614b87e2796e883805fb472e69);
+        
+    
+        var popup_4927c6fa0a89f9a32114808c5b8b6988 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb5e72498550423ca975b48bdfcb59c0 = $(`<div id="html_eb5e72498550423ca975b48bdfcb59c0" style="width: 100.0%; height: 100.0%;"><b>Southeast Asia</b><br>Yearly Change:<br>1970: 33.33%<br>1971: -75.00%<br></div>`)[0];
+                popup_4927c6fa0a89f9a32114808c5b8b6988.setContent(html_eb5e72498550423ca975b48bdfcb59c0);
+            
+        
+
+        marker_f95233fa6b3c6207bb701bc9a7565637.bindPopup(popup_4927c6fa0a89f9a32114808c5b8b6988)
+        ;
+
+        
+    
+    
+            var marker_679c4ff9f9ff98d417f11dada1a1ca2b = L.marker(
+                [-1.0, 15.0],
+                {
+}
+            ).addTo(map_a0e918999f59d34355913d340610796f);
+        
+    
+            var icon_1087456372f3265c75626f302cee2041 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_679c4ff9f9ff98d417f11dada1a1ca2b.setIcon(icon_1087456372f3265c75626f302cee2041);
+        
+    
+        var popup_3e93d91c587df821d126eb26b6921efa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0766498fd6bde2e94a6473d12108f13f = $(`<div id="html_0766498fd6bde2e94a6473d12108f13f" style="width: 100.0%; height: 100.0%;"><b>Sub-Saharan Africa</b><br>Yearly Change:<br>1970: 100.00%<br>1971: 0.00%<br></div>`)[0];
+                popup_3e93d91c587df821d126eb26b6921efa.setContent(html_0766498fd6bde2e94a6473d12108f13f);
+            
+        
+
+        marker_679c4ff9f9ff98d417f11dada1a1ca2b.bindPopup(popup_3e93d91c587df821d126eb26b6921efa)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68b8726bd045557ca9835c3fd6145be7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68b8726bd045557ca9835c3fd6145be7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68b8726bd045557ca9835c3fd6145be7 = L.map(
+                "map_68b8726bd045557ca9835c3fd6145be7",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_657e87a58d095060f6ec1f0c9a72d3af = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_657e87a58d095060f6ec1f0c9a72d3af.addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var marker_0b4d0e5b6cae089786b141c540636374 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_fdded3b3875f9996b8529cb17826851c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b4d0e5b6cae089786b141c540636374.setIcon(icon_fdded3b3875f9996b8529cb17826851c);
+        
+    
+        var popup_f7c234605caf4680297156f24dfed4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c63c4a97d0a67c1a34c94e681a7c476 = $(`<div id="html_7c63c4a97d0a67c1a34c94e681a7c476" style="width: 100.0%; height: 100.0%;"><b>Central America & Caribbean</b><br>Yearly Change:<br>1970: -91.67%<br>1971: -28.57%<br>1972: -40.00%<br>1973: 100.00%<br>1974: 100.00%<br>1975: -33.33%<br>1976: 550.00%<br>1977: -50.00%<br>1978: 646.15%<br>1979: 195.36%<br>1980: 86.04%<br>1981: 7.79%<br>1982: -14.10%<br>1983: -14.49%<br>1984: -19.43%<br>1985: 14.56%<br>1986: -49.55%<br>1987: 44.02%<br>1988: -12.54%<br>1989: 1.62%<br>1990: -37.57%<br>1991: 131.21%<br>1992: -70.94%<br>1994: -14.69%<br>1995: -6.67%<br>1996: -30.95%<br>1997: 0.86%<br>1998: -99.15%<br>1999: 700.00%<br>2000: 62.50%<br>2001: -38.46%<br>2002: -62.50%<br>2003: 166.67%<br>2004: -37.50%<br>2005: -40.00%<br>2006: 66.67%<br></div>`)[0];
+                popup_f7c234605caf4680297156f24dfed4dc.setContent(html_7c63c4a97d0a67c1a34c94e681a7c476);
+            
+        
+
+        marker_0b4d0e5b6cae089786b141c540636374.bindPopup(popup_f7c234605caf4680297156f24dfed4dc)
+        ;
+
+        
+    
+    
+            var marker_3e8603b09ffcdbdf8c4ebe0eb94ea153 = L.marker(
+                [1.3586224, 103.9314776],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_cec0f62bb9c16c0dccad5b446c5c163d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3e8603b09ffcdbdf8c4ebe0eb94ea153.setIcon(icon_cec0f62bb9c16c0dccad5b446c5c163d);
+        
+    
+        var popup_42d55169e0c820c2445ab080f5143035 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76731ccb6ed3ca015f07c75abf537208 = $(`<div id="html_76731ccb6ed3ca015f07c75abf537208" style="width: 100.0%; height: 100.0%;"><b>South Asia</b><br>Yearly Change:<br>1970: -97.92%<br>1972: 0.00%<br>1973: 0.00%<br>1974: 100.00%<br>1975: 50.00%<br>1976: 66.67%<br>1977: -60.00%<br>1978: 0.00%<br>1979: 1600.00%<br>1980: -64.71%<br>1981: 91.67%<br>1982: -17.39%<br>1983: 226.32%<br>1984: 259.68%<br>1985: -27.80%<br>1986: 73.91%<br>1987: 25.00%<br>1988: 128.86%<br>1989: 15.48%<br>1990: -35.35%<br>1991: 13.21%<br>1992: -19.79%<br>1994: -30.76%<br>1995: 179.52%<br>1996: -29.69%<br>1997: -33.69%<br>1998: -72.24%<br>1999: 64.71%<br>2000: 57.59%<br>2001: 8.78%<br>2002: -13.80%<br>2003: 6.65%<br>2004: 4.53%<br>2005: 63.41%<br>2006: -7.96%<br></div>`)[0];
+                popup_42d55169e0c820c2445ab080f5143035.setContent(html_76731ccb6ed3ca015f07c75abf537208);
+            
+        
+
+        marker_3e8603b09ffcdbdf8c4ebe0eb94ea153.bindPopup(popup_42d55169e0c820c2445ab080f5143035)
+        ;
+
+        
+    
+    
+            var marker_94b6d8fab2923e85476d7907789ed80e = L.marker(
+                [-8.7287308, 115.2365646],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_32420db556996211f9a8e6ad2a66fed1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_94b6d8fab2923e85476d7907789ed80e.setIcon(icon_32420db556996211f9a8e6ad2a66fed1);
+        
+    
+        var popup_bd0022a726729bc1be7296362211488b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7812554c19687ce02a9633559624c0b4 = $(`<div id="html_7812554c19687ce02a9633559624c0b4" style="width: 100.0%; height: 100.0%;"><b>Southeast Asia</b><br>Yearly Change:<br>1970: -80.95%<br>1971: -75.00%<br>1972: 650.00%<br>1973: -86.67%<br>1974: 50.00%<br>1975: 133.33%<br>1976: 71.43%<br>1977: -41.67%<br>1978: 528.57%<br>1979: 79.55%<br>1980: 16.46%<br>1981: -45.65%<br>1982: -22.00%<br>1983: -56.41%<br>1984: 164.71%<br>1985: 182.22%<br>1986: -15.75%<br>1987: 55.14%<br>1988: 45.78%<br>1989: -16.12%<br>1990: 70.94%<br>1991: -41.21%<br>1992: 36.27%<br>1994: -46.04%<br>1995: 12.00%<br>1996: 14.88%<br>1997: -17.62%<br>1998: -79.87%<br>1999: 234.38%<br>2000: 138.32%<br>2001: -28.24%<br>2002: -39.89%<br>2003: 31.82%<br>2004: -34.48%<br>2005: 114.74%<br>2006: -19.61%<br></div>`)[0];
+                popup_bd0022a726729bc1be7296362211488b.setContent(html_7812554c19687ce02a9633559624c0b4);
+            
+        
+
+        marker_94b6d8fab2923e85476d7907789ed80e.bindPopup(popup_bd0022a726729bc1be7296362211488b)
+        ;
+
+        
+    
+    
+            var marker_b873d776dc6ed093d9673e1dbc85384e = L.marker(
+                [33.8746648, 35.5667363],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_1d0a2cc012724f88e1dde45c83a6e208 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b873d776dc6ed093d9673e1dbc85384e.setIcon(icon_1d0a2cc012724f88e1dde45c83a6e208);
+        
+    
+        var popup_6d12ecf62630909b65a887baed3e429e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc877b0c5a7189558819f2d63c0a9011 = $(`<div id="html_dc877b0c5a7189558819f2d63c0a9011" style="width: 100.0%; height: 100.0%;"><b>Middle East & North Africa</b><br>Yearly Change:<br>1970: -77.61%<br>1971: 83.33%<br>1972: 23.64%<br>1973: -72.06%<br>1974: 147.37%<br>1975: 0.00%<br>1976: 34.04%<br>1977: 236.51%<br>1978: -40.09%<br>1979: 254.33%<br>1980: -5.78%<br>1981: -24.29%<br>1982: -12.46%<br>1983: 18.15%<br>1984: -23.49%<br>1985: -40.94%<br>1986: 35.33%<br>1987: 0.00%<br>1988: 21.18%<br>1989: 88.62%<br>1990: 6.25%<br>1991: 23.53%<br>1992: 94.58%<br>1994: -11.48%<br>1995: -43.76%<br>1996: -36.78%<br>1997: 46.11%<br>1998: -55.05%<br>1999: 27.35%<br>2000: -15.06%<br>2001: 35.47%<br>2002: -9.47%<br>2003: -6.46%<br>2004: 60.53%<br>2005: 80.53%<br>2006: -21.00%<br></div>`)[0];
+                popup_6d12ecf62630909b65a887baed3e429e.setContent(html_dc877b0c5a7189558819f2d63c0a9011);
+            
+        
+
+        marker_b873d776dc6ed093d9673e1dbc85384e.bindPopup(popup_6d12ecf62630909b65a887baed3e429e)
+        ;
+
+        
+    
+    
+            var marker_8978c14159d05132f58df937c76b52e4 = L.marker(
+                [32.0926506, 118.9079113],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_9ce708ef560d8d06140b4fedaf169840 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8978c14159d05132f58df937c76b52e4.setIcon(icon_9ce708ef560d8d06140b4fedaf169840);
+        
+    
+        var popup_95e3ddfc4bb3f837074ded9074241388 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1947b4c2055321754417db619bf046c6 = $(`<div id="html_1947b4c2055321754417db619bf046c6" style="width: 100.0%; height: 100.0%;"><b>East Asia</b><br>Yearly Change:<br>1970: -91.67%<br>1971: 0.00%<br>1973: 100.00%<br>1974: 150.00%<br>1975: 140.00%<br>1976: -83.33%<br>1978: 1550.00%<br>1979: -57.58%<br>1980: -92.86%<br>1981: 300.00%<br>1982: -25.00%<br>1983: 300.00%<br>1984: 25.00%<br>1985: -33.33%<br>1986: 20.00%<br>1987: -16.67%<br>1988: 140.00%<br>1989: -25.00%<br>1990: 450.00%<br>1991: -70.71%<br>1992: 155.17%<br>1994: -54.05%<br>1995: 8.82%<br>1996: 140.54%<br>1997: -55.06%<br>1998: -77.50%<br>1999: -55.56%<br>2000: 350.00%<br>2001: 5.56%<br>2002: -78.95%<br>2003: 50.00%<br>2004: -33.33%<br>2005: -50.00%<br>2006: -50.00%<br></div>`)[0];
+                popup_95e3ddfc4bb3f837074ded9074241388.setContent(html_1947b4c2055321754417db619bf046c6);
+            
+        
+
+        marker_8978c14159d05132f58df937c76b52e4.bindPopup(popup_95e3ddfc4bb3f837074ded9074241388)
+        ;
+
+        
+    
+    
+            var marker_7a5ebd5b64d438dd9da0faef88b1ad09 = L.marker(
+                [39.4009215, 72.8676621],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_630e101ed229c13c942ef4130aa911ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a5ebd5b64d438dd9da0faef88b1ad09.setIcon(icon_630e101ed229c13c942ef4130aa911ab);
+        
+    
+        var popup_18130308ec07352f10597799820b87f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e9b8af651a874196018e33ed90df398 = $(`<div id="html_8e9b8af651a874196018e33ed90df398" style="width: 100.0%; height: 100.0%;"><b>Central Asia</b><br>Yearly Change:<br>1991: 600.00%<br>1992: 985.71%<br>1994: -14.47%<br>1995: -15.38%<br>1996: -40.00%<br>1997: 48.48%<br>1998: -48.98%<br>1999: -4.00%<br>2000: -12.50%<br>2001: -14.29%<br>2002: -66.67%<br>2003: 16.67%<br>2004: 14.29%<br>2005: 37.50%<br>2006: -81.82%<br></div>`)[0];
+                popup_18130308ec07352f10597799820b87f5.setContent(html_8e9b8af651a874196018e33ed90df398);
+            
+        
+
+        marker_7a5ebd5b64d438dd9da0faef88b1ad09.bindPopup(popup_18130308ec07352f10597799820b87f5)
+        ;
+
+        
+    
+    
+            var marker_acabb659b3ce25b613ea0517236044cc = L.marker(
+                [53.8598291, 27.5535313],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_efee7b7167f8bb3f465c78563377f911 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_acabb659b3ce25b613ea0517236044cc.setIcon(icon_efee7b7167f8bb3f465c78563377f911);
+        
+    
+        var popup_12e88826813a2c1a6d9eb0e97052cff2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3dfb5b220ce9fbbe6a1cdb0474cb3ce = $(`<div id="html_d3dfb5b220ce9fbbe6a1cdb0474cb3ce" style="width: 100.0%; height: 100.0%;"><b>Western Europe</b><br>Yearly Change:<br>1970: -72.97%<br>1971: 146.00%<br>1972: 216.26%<br>1973: -23.65%<br>1974: 11.78%<br>1975: 26.51%<br>1976: 50.95%<br>1977: 20.50%<br>1978: -5.50%<br>1979: 43.49%<br>1980: -41.41%<br>1981: -15.65%<br>1982: -18.75%<br>1983: 14.18%<br>1984: 14.95%<br>1985: -13.92%<br>1986: -0.85%<br>1987: -9.01%<br>1988: 15.33%<br>1989: -9.20%<br>1990: -12.39%<br>1991: 78.41%<br>1992: 10.23%<br>1994: -23.66%<br>1995: -42.29%<br>1996: 31.16%<br>1997: -21.04%<br>1998: -59.60%<br>1999: 66.67%<br>2000: 5.53%<br>2001: -7.26%<br>2002: -54.78%<br>2003: 16.35%<br>2004: -51.24%<br>2005: 76.27%<br>2006: -25.00%<br></div>`)[0];
+                popup_12e88826813a2c1a6d9eb0e97052cff2.setContent(html_d3dfb5b220ce9fbbe6a1cdb0474cb3ce);
+            
+        
+
+        marker_acabb659b3ce25b613ea0517236044cc.bindPopup(popup_12e88826813a2c1a6d9eb0e97052cff2)
+        ;
+
+        
+    
+    
+            var marker_4cdfdb0b4ab08364bc1eb4666bdc164a = L.marker(
+                [15.725, -93.17083],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_f48f12fb184f6e580b62d98ae14ec6d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cdfdb0b4ab08364bc1eb4666bdc164a.setIcon(icon_f48f12fb184f6e580b62d98ae14ec6d1);
+        
+    
+        var popup_1446e9e9f86021d694f88b402b5913ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d94dc29023d42eec3770477d98bf4169 = $(`<div id="html_d94dc29023d42eec3770477d98bf4169" style="width: 100.0%; height: 100.0%;"><b>Australasia & Oceania</b><br>Yearly Change:<br>1970: -80.00%<br>1971: 0.00%<br>1972: 700.00%<br>1973: -87.50%<br>1974: 0.00%<br>1978: 100.00%<br>1979: -50.00%<br>1980: 400.00%<br>1981: -40.00%<br>1982: 33.33%<br>1984: 175.00%<br>1985: -36.36%<br>1986: -42.86%<br>1987: -25.00%<br>1988: 300.00%<br>1989: 141.67%<br>1990: -37.93%<br>1991: -44.44%<br>1992: 60.00%<br>1994: -12.50%<br>1995: 28.57%<br>1996: 5.56%<br>1997: -63.16%<br>1998: -14.29%<br>1999: -33.33%<br>2000: 25.00%<br>2001: -40.00%<br>2002: -33.33%<br>2003: 100.00%<br>2006: -75.00%<br></div>`)[0];
+                popup_1446e9e9f86021d694f88b402b5913ba.setContent(html_d94dc29023d42eec3770477d98bf4169);
+            
+        
+
+        marker_4cdfdb0b4ab08364bc1eb4666bdc164a.bindPopup(popup_1446e9e9f86021d694f88b402b5913ba)
+        ;
+
+        
+    
+    
+            var marker_0d707f8f75c4312a1f7741aa5184f16b = L.marker(
+                [7.1881, 21.09375],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_405b7886f3a5dab682d89547b37a46de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d707f8f75c4312a1f7741aa5184f16b.setIcon(icon_405b7886f3a5dab682d89547b37a46de);
+        
+    
+        var popup_347d7718b1586b5082b6b656b9e9f21c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_262c0defc7cf9eafc8b32d6a0b228843 = $(`<div id="html_262c0defc7cf9eafc8b32d6a0b228843" style="width: 100.0%; height: 100.0%;"><b>Sub-Saharan Africa</b><br>Yearly Change:<br>1970: -97.50%<br>1971: 0.00%<br>1972: 100.00%<br>1973: 0.00%<br>1974: 75.00%<br>1975: 57.14%<br>1976: -27.27%<br>1977: 250.00%<br>1978: 53.57%<br>1979: 172.09%<br>1980: -54.70%<br>1981: 69.81%<br>1982: -38.89%<br>1983: 81.82%<br>1984: 21.00%<br>1985: 17.36%<br>1986: 30.28%<br>1987: -6.49%<br>1988: 94.22%<br>1989: -13.39%<br>1990: 54.30%<br>1991: -40.09%<br>1992: 106.69%<br>1994: -22.30%<br>1995: -44.68%<br>1996: -9.62%<br>1997: 29.17%<br>1998: -68.82%<br>1999: 62.07%<br>2000: 27.66%<br>2001: -12.22%<br>2002: -24.68%<br>2003: -40.34%<br>2004: -52.11%<br>2005: 76.47%<br>2006: 0.00%<br></div>`)[0];
+                popup_347d7718b1586b5082b6b656b9e9f21c.setContent(html_262c0defc7cf9eafc8b32d6a0b228843);
+            
+        
+
+        marker_0d707f8f75c4312a1f7741aa5184f16b.bindPopup(popup_347d7718b1586b5082b6b656b9e9f21c)
+        ;
+
+        
+    
+    
+            var marker_e0b1bd8a871fb986713e3ef3426e185d = L.marker(
+                [50.2659033, 18.6975762],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_f4c81dd25e2c371e42bfdb7f390278ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0b1bd8a871fb986713e3ef3426e185d.setIcon(icon_f4c81dd25e2c371e42bfdb7f390278ba);
+        
+    
+        var popup_c184acd72b2a755ad7b13e845b36904d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f3e4f3bf32588868f510415559ea2e8 = $(`<div id="html_5f3e4f3bf32588868f510415559ea2e8" style="width: 100.0%; height: 100.0%;"><b>Eastern Europe</b><br>Yearly Change:<br>1970: 140.00%<br>1971: -58.33%<br>1972: -80.00%<br>1973: 0.00%<br>1974: 100.00%<br>1977: 0.00%<br>1978: 0.00%<br>1979: -50.00%<br>1980: 0.00%<br>1981: 300.00%<br>1982: -25.00%<br>1983: -33.33%<br>1984: 100.00%<br>1985: 25.00%<br>1986: -40.00%<br>1987: -66.67%<br>1988: 300.00%<br>1989: 300.00%<br>1990: 262.50%<br>1991: 41.38%<br>1992: 8.54%<br>1994: 6.74%<br>1995: -28.42%<br>1996: 157.35%<br>1997: 41.71%<br>1998: -57.66%<br>1999: 31.43%<br>2000: 69.57%<br>2001: 7.26%<br>2002: -55.78%<br>2003: -9.91%<br>2004: -54.00%<br>2005: 65.22%<br>2006: -53.95%<br></div>`)[0];
+                popup_c184acd72b2a755ad7b13e845b36904d.setContent(html_5f3e4f3bf32588868f510415559ea2e8);
+            
+        
+
+        marker_e0b1bd8a871fb986713e3ef3426e185d.bindPopup(popup_c184acd72b2a755ad7b13e845b36904d)
+        ;
+
+        
+    
+    
+            var marker_db0d9ff514325ad1a9e51ef104d9e4a4 = L.marker(
+                [51.0000002, -109.0],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_cb711690a1a0bdb47f70bfa04a480414 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_db0d9ff514325ad1a9e51ef104d9e4a4.setIcon(icon_cb711690a1a0bdb47f70bfa04a480414);
+        
+    
+        var popup_518a56d7a5da78ba424450420abb4a70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03c7ef36122843a0e9b8987da79eef70 = $(`<div id="html_03c7ef36122843a0e9b8987da79eef70" style="width: 100.0%; height: 100.0%;"><b>North America</b><br>Yearly Change:<br>1970: 1183.78%<br>1971: -46.74%<br>1972: -71.94%<br>1973: -7.04%<br>1974: 71.21%<br>1975: 48.67%<br>1976: -12.50%<br>1977: 8.84%<br>1978: -28.75%<br>1979: -30.70%<br>1980: -5.06%<br>1981: 0.00%<br>1982: 22.67%<br>1983: -41.30%<br>1984: 24.07%<br>1985: -34.33%<br>1986: 20.45%<br>1987: -35.85%<br>1988: -14.71%<br>1989: 48.28%<br>1990: -16.28%<br>1991: 11.11%<br>1992: 0.00%<br>1994: 150.00%<br>1995: -9.00%<br>1996: 21.98%<br>1997: 23.42%<br>1998: -72.99%<br>1999: 43.24%<br>2000: -22.64%<br>2001: 17.07%<br>2002: -31.25%<br>2003: 3.03%<br>2004: -67.65%<br>2005: 90.91%<br>2006: -52.38%<br></div>`)[0];
+                popup_518a56d7a5da78ba424450420abb4a70.setContent(html_03c7ef36122843a0e9b8987da79eef70);
+            
+        
+
+        marker_db0d9ff514325ad1a9e51ef104d9e4a4.bindPopup(popup_518a56d7a5da78ba424450420abb4a70)
+        ;
+
+        
+    
+    
+            var marker_a124178ac7586bdc2459fabdc6b215fc = L.marker(
+                [-21.0002179, -61.0006565],
+                {
+}
+            ).addTo(map_68b8726bd045557ca9835c3fd6145be7);
+        
+    
+            var icon_4a55573902b2a9bb6ec3687b6289f797 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a124178ac7586bdc2459fabdc6b215fc.setIcon(icon_4a55573902b2a9bb6ec3687b6289f797);
+        
+    
+        var popup_2d914c58b46ba7d6ab406b595df18bb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97ea933d4f19dae483541eb7f5930e20 = $(`<div id="html_97ea933d4f19dae483541eb7f5930e20" style="width: 100.0%; height: 100.0%;"><b>South America</b><br>Yearly Change:<br>1970: -48.92%<br>1971: -57.75%<br>1972: 6.67%<br>1973: 178.12%<br>1974: -5.62%<br>1975: -7.14%<br>1976: 30.77%<br>1977: 10.78%<br>1978: 92.92%<br>1979: 5.96%<br>1980: 37.23%<br>1981: 31.55%<br>1982: 53.48%<br>1983: 51.09%<br>1984: 52.53%<br>1985: -28.14%<br>1986: 19.62%<br>1987: 1.58%<br>1988: -19.25%<br>1989: 32.98%<br>1990: -22.63%<br>1991: 23.27%<br>1992: -8.87%<br>1994: -68.97%<br>1995: -31.64%<br>1996: 102.75%<br>1997: 49.71%<br>1998: -86.30%<br>1999: 22.64%<br>2000: 8.46%<br>2001: 56.03%<br>2002: -31.82%<br>2003: -22.67%<br>2004: -63.79%<br>2005: 16.67%<br>2006: -28.57%<br></div>`)[0];
+                popup_2d914c58b46ba7d6ab406b595df18bb8.setContent(html_97ea933d4f19dae483541eb7f5930e20);
+            
+        
+
+        marker_a124178ac7586bdc2459fabdc6b215fc.bindPopup(popup_2d914c58b46ba7d6ab406b595df18bb8)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_557612d16215181f97bc6495e7332a0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_557612d16215181f97bc6495e7332a0c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_557612d16215181f97bc6495e7332a0c = L.map(
+                "map_557612d16215181f97bc6495e7332a0c",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7e83b4a53614a7671f284a92432dae6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7e83b4a53614a7671f284a92432dae6.addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var marker_7f29f558b2dcd16d784dd78317898bac = L.marker(
+                [7.1881, 21.09375],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_ad1fde16d024c7aee40dd1c47f01fe4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f29f558b2dcd16d784dd78317898bac.setIcon(icon_ad1fde16d024c7aee40dd1c47f01fe4e);
+        
+    
+        var popup_ee2847fc8774a0a09ffa0f56f5781342 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e238446a2438259eddd6030127fda568 = $(`<div id="html_e238446a2438259eddd6030127fda568" style="width: 100.0%; height: 100.0%;">Sub-Saharan Africa: 14.18 Average Casualties</div>`)[0];
+                popup_ee2847fc8774a0a09ffa0f56f5781342.setContent(html_e238446a2438259eddd6030127fda568);
+            
+        
+
+        marker_7f29f558b2dcd16d784dd78317898bac.bindPopup(popup_ee2847fc8774a0a09ffa0f56f5781342)
+        ;
+
+        
+    
+    
+            var marker_26c5721af2888cc2741b1ad76f8777b0 = L.marker(
+                [32.0926506, 118.9079113],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_5b68cd605d002f4f217d2a1ea7cc61e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_26c5721af2888cc2741b1ad76f8777b0.setIcon(icon_5b68cd605d002f4f217d2a1ea7cc61e1);
+        
+    
+        var popup_db348bfd861b71fa9c68e501e326ea9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_919147c27bccfe690d9757f5d442eab3 = $(`<div id="html_919147c27bccfe690d9757f5d442eab3" style="width: 100.0%; height: 100.0%;">East Asia: 13.29 Average Casualties</div>`)[0];
+                popup_db348bfd861b71fa9c68e501e326ea9e.setContent(html_919147c27bccfe690d9757f5d442eab3);
+            
+        
+
+        marker_26c5721af2888cc2741b1ad76f8777b0.bindPopup(popup_db348bfd861b71fa9c68e501e326ea9e)
+        ;
+
+        
+    
+    
+            var marker_f2d57f9a4b755ec77a5665e243d2bbed = L.marker(
+                [1.3586224, 103.9314776],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_92194053667efc3a53b305f52fc15d8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f2d57f9a4b755ec77a5665e243d2bbed.setIcon(icon_92194053667efc3a53b305f52fc15d8a);
+        
+    
+        var popup_41b990cab748aa5c9e7f9c2797a695a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622e0d5d3e334f73707fb4adfd29d3bb = $(`<div id="html_622e0d5d3e334f73707fb4adfd29d3bb" style="width: 100.0%; height: 100.0%;">South Asia: 11.39 Average Casualties</div>`)[0];
+                popup_41b990cab748aa5c9e7f9c2797a695a5.setContent(html_622e0d5d3e334f73707fb4adfd29d3bb);
+            
+        
+
+        marker_f2d57f9a4b755ec77a5665e243d2bbed.bindPopup(popup_41b990cab748aa5c9e7f9c2797a695a5)
+        ;
+
+        
+    
+    
+            var marker_3d315608a23f0e7830691bf05f27fb67 = L.marker(
+                [51.0000002, -109.0],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_fbe49413c5441456bc0e71fd4c95b6a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d315608a23f0e7830691bf05f27fb67.setIcon(icon_fbe49413c5441456bc0e71fd4c95b6a1);
+        
+    
+        var popup_2957a7a4ec1e0de49074f05150db5570 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9276acded3a713a4369abad702f1b617 = $(`<div id="html_9276acded3a713a4369abad702f1b617" style="width: 100.0%; height: 100.0%;">North America: 9.20 Average Casualties</div>`)[0];
+                popup_2957a7a4ec1e0de49074f05150db5570.setContent(html_9276acded3a713a4369abad702f1b617);
+            
+        
+
+        marker_3d315608a23f0e7830691bf05f27fb67.bindPopup(popup_2957a7a4ec1e0de49074f05150db5570)
+        ;
+
+        
+    
+    
+            var marker_6fff9adf87416624fc1ee6142e75c062 = L.marker(
+                [33.8746648, 35.5667363],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_79890e871891a6b0796607744a16294b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6fff9adf87416624fc1ee6142e75c062.setIcon(icon_79890e871891a6b0796607744a16294b);
+        
+    
+        var popup_8dfa786731a19162f95d9c9919f086ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40f719451cdaad94edab82c4b7a34d72 = $(`<div id="html_40f719451cdaad94edab82c4b7a34d72" style="width: 100.0%; height: 100.0%;">Middle East & North Africa: 9.12 Average Casualties</div>`)[0];
+                popup_8dfa786731a19162f95d9c9919f086ef.setContent(html_40f719451cdaad94edab82c4b7a34d72);
+            
+        
+
+        marker_6fff9adf87416624fc1ee6142e75c062.bindPopup(popup_8dfa786731a19162f95d9c9919f086ef)
+        ;
+
+        
+    
+    
+            var marker_fe3b37ddddc3c08b9135ab706544d00a = L.marker(
+                [39.4009215, 72.8676621],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_305b62d9c361c432891a17b3ea1beb9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fe3b37ddddc3c08b9135ab706544d00a.setIcon(icon_305b62d9c361c432891a17b3ea1beb9d);
+        
+    
+        var popup_a961fd4734104a2fb143d3e7280598e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d19be07b7d7c0fd104ace075f1fbafb3 = $(`<div id="html_d19be07b7d7c0fd104ace075f1fbafb3" style="width: 100.0%; height: 100.0%;">Central Asia: 8.73 Average Casualties</div>`)[0];
+                popup_a961fd4734104a2fb143d3e7280598e0.setContent(html_d19be07b7d7c0fd104ace075f1fbafb3);
+            
+        
+
+        marker_fe3b37ddddc3c08b9135ab706544d00a.bindPopup(popup_a961fd4734104a2fb143d3e7280598e0)
+        ;
+
+        
+    
+    
+            var marker_537a10943515a957f8a2b141fc65e6f9 = L.marker(
+                [-8.7287308, 115.2365646],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_20e55eaadc305c0c4687dc35d089598b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_537a10943515a957f8a2b141fc65e6f9.setIcon(icon_20e55eaadc305c0c4687dc35d089598b);
+        
+    
+        var popup_09dcc5e25c32d793dd531a6e47bd774e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_041ab4a9ff25d85846352cac7ed047ef = $(`<div id="html_041ab4a9ff25d85846352cac7ed047ef" style="width: 100.0%; height: 100.0%;">Southeast Asia: 8.05 Average Casualties</div>`)[0];
+                popup_09dcc5e25c32d793dd531a6e47bd774e.setContent(html_041ab4a9ff25d85846352cac7ed047ef);
+            
+        
+
+        marker_537a10943515a957f8a2b141fc65e6f9.bindPopup(popup_09dcc5e25c32d793dd531a6e47bd774e)
+        ;
+
+        
+    
+    
+            var marker_a96aaf3d1346b526a55cb4d8ffab1d0a = L.marker(
+                [50.2659033, 18.6975762],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_722a6b80fdd26d5a13b32900dccbf571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a96aaf3d1346b526a55cb4d8ffab1d0a.setIcon(icon_722a6b80fdd26d5a13b32900dccbf571);
+        
+    
+        var popup_f596ce41d96ba879d7b7c0eb88cbdb7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b42a2888475439462477b40006aa75a = $(`<div id="html_5b42a2888475439462477b40006aa75a" style="width: 100.0%; height: 100.0%;">Eastern Europe: 7.09 Average Casualties</div>`)[0];
+                popup_f596ce41d96ba879d7b7c0eb88cbdb7d.setContent(html_5b42a2888475439462477b40006aa75a);
+            
+        
+
+        marker_a96aaf3d1346b526a55cb4d8ffab1d0a.bindPopup(popup_f596ce41d96ba879d7b7c0eb88cbdb7d)
+        ;
+
+        
+    
+    
+            var marker_8373d3695d031b57c59cc7d1c69d73f5 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_b10eb7c836868fca1cd12ee92a265470 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8373d3695d031b57c59cc7d1c69d73f5.setIcon(icon_b10eb7c836868fca1cd12ee92a265470);
+        
+    
+        var popup_47cc3348c5bcfb40ecf39c75e29cc654 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8041629497186116ba17eb979d9c0485 = $(`<div id="html_8041629497186116ba17eb979d9c0485" style="width: 100.0%; height: 100.0%;">Central America & Caribbean: 6.42 Average Casualties</div>`)[0];
+                popup_47cc3348c5bcfb40ecf39c75e29cc654.setContent(html_8041629497186116ba17eb979d9c0485);
+            
+        
+
+        marker_8373d3695d031b57c59cc7d1c69d73f5.bindPopup(popup_47cc3348c5bcfb40ecf39c75e29cc654)
+        ;
+
+        
+    
+    
+            var marker_6bff78a7aa8db1a368561446223772f2 = L.marker(
+                [-21.0002179, -61.0006565],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_3d9c69f4d50d5e4d8aca3c172b1924c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6bff78a7aa8db1a368561446223772f2.setIcon(icon_3d9c69f4d50d5e4d8aca3c172b1924c1);
+        
+    
+        var popup_45283043d251a024f084655833cb6ed6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da0d9caa334dc8a0b87e774c529d7e87 = $(`<div id="html_da0d9caa334dc8a0b87e774c529d7e87" style="width: 100.0%; height: 100.0%;">South America: 3.95 Average Casualties</div>`)[0];
+                popup_45283043d251a024f084655833cb6ed6.setContent(html_da0d9caa334dc8a0b87e774c529d7e87);
+            
+        
+
+        marker_6bff78a7aa8db1a368561446223772f2.bindPopup(popup_45283043d251a024f084655833cb6ed6)
+        ;
+
+        
+    
+    
+            var marker_abd0faed57bb8b6410e74c28d1fcd3de = L.marker(
+                [15.725, -93.17083],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_6da178b65775ae81d2fcc2a38023b09b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_abd0faed57bb8b6410e74c28d1fcd3de.setIcon(icon_6da178b65775ae81d2fcc2a38023b09b);
+        
+    
+        var popup_a2ef2fcdfeaafc76d19240e280967c3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ec97b582353c6b827e523e7b27ae52b = $(`<div id="html_2ec97b582353c6b827e523e7b27ae52b" style="width: 100.0%; height: 100.0%;">Australasia & Oceania: 2.27 Average Casualties</div>`)[0];
+                popup_a2ef2fcdfeaafc76d19240e280967c3e.setContent(html_2ec97b582353c6b827e523e7b27ae52b);
+            
+        
+
+        marker_abd0faed57bb8b6410e74c28d1fcd3de.bindPopup(popup_a2ef2fcdfeaafc76d19240e280967c3e)
+        ;
+
+        
+    
+    
+            var marker_2080559d6aea0a6880d93fc5974c09a8 = L.marker(
+                [53.8598291, 27.5535313],
+                {
+}
+            ).addTo(map_557612d16215181f97bc6495e7332a0c);
+        
+    
+            var icon_3ac2034d4ac0d6ec3837f13560f0a8c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2080559d6aea0a6880d93fc5974c09a8.setIcon(icon_3ac2034d4ac0d6ec3837f13560f0a8c1);
+        
+    
+        var popup_d188b885e48291e865e0e68d0cd0781b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_260bf55be44668d4a10b1b86109f74d8 = $(`<div id="html_260bf55be44668d4a10b1b86109f74d8" style="width: 100.0%; height: 100.0%;">Western Europe: 1.94 Average Casualties</div>`)[0];
+                popup_d188b885e48291e865e0e68d0cd0781b.setContent(html_260bf55be44668d4a10b1b86109f74d8);
+            
+        
+
+        marker_2080559d6aea0a6880d93fc5974c09a8.bindPopup(popup_d188b885e48291e865e0e68d0cd0781b)
+        ;
+
+        
+    
+</script>
+</html>

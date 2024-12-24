@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca9b7ae3d762365c136bdaf52f89aced {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ca9b7ae3d762365c136bdaf52f89aced" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca9b7ae3d762365c136bdaf52f89aced = L.map(
+                "map_ca9b7ae3d762365c136bdaf52f89aced",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aec9e47d9d0cdf05c64c068d8c60125e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aec9e47d9d0cdf05c64c068d8c60125e.addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var marker_cd720183d9b20a224e0b1131743f8f57 = L.marker(
+                [39.4009215, 72.8676621],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_f9184fb984dd1b01778acb03aaf3b41b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cd720183d9b20a224e0b1131743f8f57.setIcon(icon_f9184fb984dd1b01778acb03aaf3b41b);
+        
+    
+        var popup_20d90bbd20eb1d7561ca6eb5c716e0ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_894071f6bd94282d011ad36ad4994a45 = $(`<div id="html_894071f6bd94282d011ad36ad4994a45" style="width: 100.0%; height: 100.0%;"><b>Central Asia</b><br>Top 5 Groups:<br>Unknown: 327 events<br>Supporters of Ex-President Gamsakhurdial: 10 events<br>Azerbaijan Guerrillas: 7 events<br>Gunmen: 5 events<br>Georgian extremists: 4 events<br></div>`)[0];
+                popup_20d90bbd20eb1d7561ca6eb5c716e0ee.setContent(html_894071f6bd94282d011ad36ad4994a45);
+            
+        
+
+        marker_cd720183d9b20a224e0b1131743f8f57.bindPopup(popup_20d90bbd20eb1d7561ca6eb5c716e0ee)
+        ;
+
+        
+    
+    
+            var marker_787248e1f026fb68e37cc501f6cfbd7f = L.marker(
+                [7.1881, 21.09375],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_3a6c41891bccaa11afc29606679d267d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_787248e1f026fb68e37cc501f6cfbd7f.setIcon(icon_3a6c41891bccaa11afc29606679d267d);
+        
+    
+        var popup_3de162ec8cb1a43a9e55eeab212b9ee9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13d63d7400f62f6ea821894b02951905 = $(`<div id="html_13d63d7400f62f6ea821894b02951905" style="width: 100.0%; height: 100.0%;"><b>Sub-Saharan Africa</b><br>Top 5 Groups:<br>Unknown: 2422 events<br>African National Congress (South Africa): 606 events<br>National Union for the Total Independence of Angola (UNITA): 431 events<br>Mozambique National Resistance Movement (MNR): 199 events<br>Hutu extremists: 162 events<br></div>`)[0];
+                popup_3de162ec8cb1a43a9e55eeab212b9ee9.setContent(html_13d63d7400f62f6ea821894b02951905);
+            
+        
+
+        marker_787248e1f026fb68e37cc501f6cfbd7f.bindPopup(popup_3de162ec8cb1a43a9e55eeab212b9ee9)
+        ;
+
+        
+    
+    
+            var marker_9a8f06e2e8b825607a7fdda57dbb94e9 = L.marker(
+                [15.725, -93.17083],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_439c807e522d8017ba9f3ae4b000a759 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9a8f06e2e8b825607a7fdda57dbb94e9.setIcon(icon_439c807e522d8017ba9f3ae4b000a759);
+        
+    
+        var popup_b320b36737e805096e37526edffb7454 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7836cfb8fda52649fd360a7f01736447 = $(`<div id="html_7836cfb8fda52649fd360a7f01736447" style="width: 100.0%; height: 100.0%;"><b>Australasia & Oceania</b><br>Top 5 Groups:<br>Unknown: 135 events<br>Bougainville Revolutionary Army (BRA): 28 events<br>Black September: 5 events<br>Kanak Socialist National Liberation Front: 5 events<br>September 11: 4 events<br></div>`)[0];
+                popup_b320b36737e805096e37526edffb7454.setContent(html_7836cfb8fda52649fd360a7f01736447);
+            
+        
+
+        marker_9a8f06e2e8b825607a7fdda57dbb94e9.bindPopup(popup_b320b36737e805096e37526edffb7454)
+        ;
+
+        
+    
+    
+            var marker_c64ae84fe9fe0678c1a9b7f5a75ff77c = L.marker(
+                [1.3586224, 103.9314776],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_ec00bc1623a6447cf5801e800b35fa63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c64ae84fe9fe0678c1a9b7f5a75ff77c.setIcon(icon_ec00bc1623a6447cf5801e800b35fa63);
+        
+    
+        var popup_8411badba315d27fec424c3328d79fdf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25aa09dd68e101dee5b6c61476cbf7cb = $(`<div id="html_25aa09dd68e101dee5b6c61476cbf7cb" style="width: 100.0%; height: 100.0%;"><b>South Asia</b><br>Top 5 Groups:<br>Unknown: 4345 events<br>Liberation Tigers of Tamil Eelam (LTTE): 1249 events<br>Sikh Extremists: 711 events<br>People's Liberation Front (JVP): 433 events<br>Taliban: 253 events<br></div>`)[0];
+                popup_8411badba315d27fec424c3328d79fdf.setContent(html_25aa09dd68e101dee5b6c61476cbf7cb);
+            
+        
+
+        marker_c64ae84fe9fe0678c1a9b7f5a75ff77c.bindPopup(popup_8411badba315d27fec424c3328d79fdf)
+        ;
+
+        
+    
+    
+            var marker_1caa70eef133242b8c3de0e10ccc96e1 = L.marker(
+                [50.2659033, 18.6975762],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_52bb7cff7b4c8a2bb9a7c6253c8844fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1caa70eef133242b8c3de0e10ccc96e1.setIcon(icon_52bb7cff7b4c8a2bb9a7c6253c8844fb);
+        
+    
+        var popup_c23bc236d827ce93c52f39d4690bb460 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bbaefb249ec27219464638730e057c8 = $(`<div id="html_5bbaefb249ec27219464638730e057c8" style="width: 100.0%; height: 100.0%;"><b>Eastern Europe</b><br>Top 5 Groups:<br>Unknown: 1308 events<br>Chechen Rebels: 299 events<br>Kosovo Liberation Army (KLA): 54 events<br>Albanian extremists: 46 events<br>National Liberation Army (NLA) (Macedonia): 35 events<br></div>`)[0];
+                popup_c23bc236d827ce93c52f39d4690bb460.setContent(html_5bbaefb249ec27219464638730e057c8);
+            
+        
+
+        marker_1caa70eef133242b8c3de0e10ccc96e1.bindPopup(popup_c23bc236d827ce93c52f39d4690bb460)
+        ;
+
+        
+    
+    
+            var marker_3ae96831abbe9e07ea3f05fbc6be3ad3 = L.marker(
+                [51.0000002, -109.0],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_aef5f99ef2f784a6091ae0ea867af217 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3ae96831abbe9e07ea3f05fbc6be3ad3.setIcon(icon_aef5f99ef2f784a6091ae0ea867af217);
+        
+    
+        var popup_781bc9cf3ea8130a57c39980b147259d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da386d739ac5a8681df599544df2deb7 = $(`<div id="html_da386d739ac5a8681df599544df2deb7" style="width: 100.0%; height: 100.0%;"><b>North America</b><br>Top 5 Groups:<br>Unknown: 721 events<br>Anti-Abortion extremists: 186 events<br>Left-Wing Militants: 169 events<br>Fuerzas Armadas de Liberacion Nacional (FALN): 120 events<br>New World Liberation Front (NWLF): 86 events<br></div>`)[0];
+                popup_781bc9cf3ea8130a57c39980b147259d.setContent(html_da386d739ac5a8681df599544df2deb7);
+            
+        
+
+        marker_3ae96831abbe9e07ea3f05fbc6be3ad3.bindPopup(popup_781bc9cf3ea8130a57c39980b147259d)
+        ;
+
+        
+    
+    
+            var marker_b3bc58f8c84c55f21a2caea8ed940f1d = L.marker(
+                [-21.0002179, -61.0006565],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_d415142efd00f5487e5855e4e2a5fa8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b3bc58f8c84c55f21a2caea8ed940f1d.setIcon(icon_d415142efd00f5487e5855e4e2a5fa8d);
+        
+    
+        var popup_b739fce9f6f0fb0a73c10579259e6fca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4901b9525961489bad7c061efc9dcb73 = $(`<div id="html_4901b9525961489bad7c061efc9dcb73" style="width: 100.0%; height: 100.0%;"><b>South America</b><br>Top 5 Groups:<br>Unknown: 4991 events<br>Shining Path (SL): 4641 events<br>Revolutionary Armed Forces of Colombia (FARC): 1615 events<br>National Liberation Army of Colombia (ELN): 1263 events<br>Manuel Rodriguez Patriotic Front (FPMR): 830 events<br></div>`)[0];
+                popup_b739fce9f6f0fb0a73c10579259e6fca.setContent(html_4901b9525961489bad7c061efc9dcb73);
+            
+        
+
+        marker_b3bc58f8c84c55f21a2caea8ed940f1d.bindPopup(popup_b739fce9f6f0fb0a73c10579259e6fca)
+        ;
+
+        
+    
+    
+            var marker_f1034246c61bcb4fb79e487131984eb9 = L.marker(
+                [-8.7287308, 115.2365646],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_1fcb5e5322bf8945f6c9bf204275617c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f1034246c61bcb4fb79e487131984eb9.setIcon(icon_1fcb5e5322bf8945f6c9bf204275617c);
+        
+    
+        var popup_25a96e9d353d6d54dcd44da65416351e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0720baace851dfceaee10afcf082fcf7 = $(`<div id="html_0720baace851dfceaee10afcf082fcf7" style="width: 100.0%; height: 100.0%;"><b>Southeast Asia</b><br>Top 5 Groups:<br>Unknown: 1266 events<br>New People's Army (NPA): 1068 events<br>Moro Islamic Liberation Front (MILF): 214 events<br>Moro National Liberation Front (MNLF): 181 events<br>Khmer Rouge: 160 events<br></div>`)[0];
+                popup_25a96e9d353d6d54dcd44da65416351e.setContent(html_0720baace851dfceaee10afcf082fcf7);
+            
+        
+
+        marker_f1034246c61bcb4fb79e487131984eb9.bindPopup(popup_25a96e9d353d6d54dcd44da65416351e)
+        ;
+
+        
+    
+    
+            var marker_c1f87eeab1981bddc4d66bc78d283c99 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_88258abe5e78fa8075aa4d62940efdf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c1f87eeab1981bddc4d66bc78d283c99.setIcon(icon_88258abe5e78fa8075aa4d62940efdf7);
+        
+    
+        var popup_cffce8c7235dcbbdab4e3b7f82cc6256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7848bc8de7c2d8b62795a06df7688f9 = $(`<div id="html_d7848bc8de7c2d8b62795a06df7688f9" style="width: 100.0%; height: 100.0%;"><b>Central America & Caribbean</b><br>Top 5 Groups:<br>Unknown: 3650 events<br>Farabundo Marti National Liberation Front (FMLN): 3353 events<br>Nicaraguan Democratic Force (FDN): 894 events<br>Nicaraguan Resistance: 231 events<br>Sandinista National Liberation Front (FSLN): 215 events<br></div>`)[0];
+                popup_cffce8c7235dcbbdab4e3b7f82cc6256.setContent(html_d7848bc8de7c2d8b62795a06df7688f9);
+            
+        
+
+        marker_c1f87eeab1981bddc4d66bc78d283c99.bindPopup(popup_cffce8c7235dcbbdab4e3b7f82cc6256)
+        ;
+
+        
+    
+    
+            var marker_4029c9a217eccb53ee8acf0be93fafba = L.marker(
+                [32.0926506, 118.9079113],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_1cac62c375426f8bda4bf5b810a4b3b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4029c9a217eccb53ee8acf0be93fafba.setIcon(icon_1cac62c375426f8bda4bf5b810a4b3b5);
+        
+    
+        var popup_4a901539c9b6b2975257cbde4a5014bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9152ef53f70a7e2af964a8fbdcbb5e6 = $(`<div id="html_f9152ef53f70a7e2af964a8fbdcbb5e6" style="width: 100.0%; height: 100.0%;"><b>East Asia</b><br>Top 5 Groups:<br>Unknown: 387 events<br>Chukakuha (Middle Core Faction): 61 events<br>Uighur Separatists: 53 events<br>Revolutionary Workers' Council (Kakurokyo): 24 events<br>East Asia Anti Japanese Armed Front: 12 events<br></div>`)[0];
+                popup_4a901539c9b6b2975257cbde4a5014bc.setContent(html_f9152ef53f70a7e2af964a8fbdcbb5e6);
+            
+        
+
+        marker_4029c9a217eccb53ee8acf0be93fafba.bindPopup(popup_4a901539c9b6b2975257cbde4a5014bc)
+        ;
+
+        
+    
+    
+            var marker_6215d9c9cac39b961960d28df8df007c = L.marker(
+                [33.8746648, 35.5667363],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_1821ae9332f75e3d441505c998b127d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6215d9c9cac39b961960d28df8df007c.setIcon(icon_1821ae9332f75e3d441505c998b127d9);
+        
+    
+        var popup_128b26a316f0bbb05a2b5edd79c201b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1275af363e084334f16e6c81e94aa65a = $(`<div id="html_1275af363e084334f16e6c81e94aa65a" style="width: 100.0%; height: 100.0%;"><b>Middle East & North Africa</b><br>Top 5 Groups:<br>Unknown: 5507 events<br>Palestinians: 1107 events<br>Kurdistan Workers' Party (PKK): 959 events<br>Hezbollah: 338 events<br>Al-Gama'at al-Islamiyya (IG): 257 events<br></div>`)[0];
+                popup_128b26a316f0bbb05a2b5edd79c201b5.setContent(html_1275af363e084334f16e6c81e94aa65a);
+            
+        
+
+        marker_6215d9c9cac39b961960d28df8df007c.bindPopup(popup_128b26a316f0bbb05a2b5edd79c201b5)
+        ;
+
+        
+    
+    
+            var marker_22de6f63e38b045ed6964837f7d71486 = L.marker(
+                [53.8598291, 27.5535313],
+                {
+}
+            ).addTo(map_ca9b7ae3d762365c136bdaf52f89aced);
+        
+    
+            var icon_cf78bfb734553846e744a7e76def6a89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_22de6f63e38b045ed6964837f7d71486.setIcon(icon_cf78bfb734553846e744a7e76def6a89);
+        
+    
+        var popup_fe596771cdcb80559d14f4c376477ebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cafd40d1571f62c47eb19132d4489caf = $(`<div id="html_cafd40d1571f62c47eb19132d4489caf" style="width: 100.0%; height: 100.0%;"><b>Western Europe</b><br>Top 5 Groups:<br>Unknown: 3878 events<br>Irish Republican Army (IRA): 2661 events<br>Basque Fatherland and Freedom (ETA): 1958 events<br>Corsican National Liberation Front (FLNC): 561 events<br>Protestant extremists: 331 events<br></div>`)[0];
+                popup_fe596771cdcb80559d14f4c376477ebd.setContent(html_cafd40d1571f62c47eb19132d4489caf);
+            
+        
+
+        marker_22de6f63e38b045ed6964837f7d71486.bindPopup(popup_fe596771cdcb80559d14f4c376477ebd)
+        ;
+
+        
+    
+</script>
+</html>
